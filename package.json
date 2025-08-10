@@ -3,10 +3,10 @@
   "version": "1.0.0",
   "description": "Dynamic Form Builder with TypeScript",
   "scripts": {
-    "build": "[my-framework] build --output public",
-    "watch": "tsc -w",
-    "serve": "http-server -p 3000"
-  },
+  "dev": "vite",
+  "build": "vite build",
+  "preview": "vite preview"
+},
   "devDependencies": {
     "@types/react": "^19.1.9",
     "http-server": "^14.0.0",
@@ -14,7 +14,7 @@
   },
   "dependencies": {
     "react": "^19.1.1",
-    "react-dom": "^19.1.1"
+    "react-dom": "^19.1.1",
+    "vite": "^7.1.1"
   }
-  
 }
