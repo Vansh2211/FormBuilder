@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "Dynamic Form Builder with TypeScript",
   "scripts": {
-    "build": "tsc",
+    "build": "[my-framework] build --output public",
     "watch": "tsc -w",
     "serve": "http-server -p 3000"
   },
@@ -16,4 +16,5 @@
     "react": "^19.1.1",
     "react-dom": "^19.1.1"
   }
+  
 }
