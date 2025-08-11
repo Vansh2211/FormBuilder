@@ -1,90 +1,20 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#667eea" />
+    <meta
+      name="description"
+      content="Dynamic Form Builder - Create, customize, and manage forms with ease"
+    />
+    <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
+    <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
     <title>Dynamic Form Builder</title>
-    <link rel="stylesheet" href="css/styles.css">
-    <link rel="stylesheet" href="css/responsive.css">
-</head>
-<body>
-    <div class="container">
-        <!-- Navigation -->
-        <div class="nav">
-            <h1>Dynamic Form Builder</h1>
-            <div class="nav-buttons">
-                <button class="nav-btn active" data-page="create">Create Form</button>
-                <button class="nav-btn" data-page="preview">Preview Form</button>
-                <button class="nav-btn" data-page="myforms">My Forms</button>
-            </div>
-        </div>
-
-        <!-- Create Form Page -->
-        <div id="create-page" class="page active">
-            <div class="card">
-                <div class="page-header">
-                    <h2>Build Your Form</h2>
-                    <div class="header-actions">
-                        <button id="preview-btn" class="btn btn-secondary">Preview Form</button>
-                        <button id="save-btn" class="btn btn-success">Save Form</button>
-                    </div>
-                </div>
-                <div class="add-field-section">
-                    <button id="add-field-btn" class="btn btn-primary">+ Add Field</button>
-                </div>
-                <div id="fields-container">
-                    <div class="empty-state">
-                        <p>No fields added yet. Click "Add Field" to start building your form.</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <!-- Preview Form Page -->
-        <div id="preview-page" class="page">
-            <div class="card">
-                <div class="page-header">
-                    <button id="back-to-builder" class="btn btn-secondary">← Back to Builder</button>
-                    <h2>Form Preview</h2>
-                </div>
-                <div class="preview-form">
-                    <div id="preview-container">
-                        <div class="empty-state">
-                            <p>No form to preview. Add some fields first.</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <!-- My Forms Page -->
-        <div id="myforms-page" class="page">
-            <div class="card">
-                <h2>Saved Forms</h2>
-                <div id="saved-forms-container">
-                    <div class="empty-state">
-                        <p>No saved forms yet. Create and save your first form!</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <!-- Save Form Modal -->
-    <div id="save-modal" class="modal">
-        <div class="modal-content">
-            <div class="modal-header">Save Your Form</div>
-            <div class="form-group">
-                <label class="form-label">Form Name</label>
-                <input type="text" id="form-name-input" class="form-control" placeholder="Enter form name">
-            </div>
-            <div class="modal-footer">
-                <button id="cancel-save" class="btn btn-secondary">Cancel</button>
-                <button id="confirm-save" class="btn btn-primary">Save Form</button>
-            </div>
-        </div>
-    </div>
-
-    <script type="module" src="dist/app.js"></script>
-</body>
+  </head>
+  <body>
+    <noscript>You need to enable JavaScript to run this app.</noscript>
+    <div id="root"></div>
+  </body>
 </html>
